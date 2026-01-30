@@ -1,6 +1,12 @@
-"""DataJoint codecs for Zarr array storage."""
+"""
+Copyright (c) 2026 Davis Bennett. All rights reserved.
 
-from .codecs import ZarrCodec
+dj-zarr-codecs: Zarr integration for DataJoint
+"""
 
-__version__ = "0.1.0"
-__all__ = ["ZarrCodec"]
+from __future__ import annotations
+
+from ._version import version as __version__
+from .codecs import ZarrArrayCodec
+
+__all__ = ["ZarrArrayCodec", "__version__"]
